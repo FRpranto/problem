@@ -16,9 +16,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         int Option = scanner.nextInt();
-
+        File file = new File("C:\\Users\\user\\Desktop\\stk\\goal\\src\\aa.txt");
         if (Option == 1) {
-            File file = new File("C:\\Users\\user\\Desktop\\stk\\goal\\src");
+            
             BufferedReader bufferedReader = null;
             try {
                 bufferedReader = new BufferedReader(new FileReader(file));
@@ -34,7 +34,7 @@ public class Main {
         } else if (Option == 2) {
             int count = getNumberOfStdents();
 
-            File file = new File("C:\\Users\\user\\Desktop\\stk\\goal\\src");
+            //File file = new File("C:\\Users\\user\\Desktop\\stk\\goal\\src");
             BufferedReader bufferedReader = null;
 
             try {
@@ -61,7 +61,7 @@ public class Main {
 
             System.out.println("Random Students :" + ids[randNumber]);
         } else if (Option == 3) {
-            File file = new File("C:\\Users\\user\\Desktop\\stk\\goal\\src");
+            //File file = new File("C:\\Users\\user\\Desktop\\stk\\goal");
             BufferedReader bufferedReader = null;
             try {
                 bufferedReader = new BufferedReader(new FileReader(file));
@@ -78,7 +78,7 @@ public class Main {
             System.out.println("Number of Students" + count);
         } else if (Option == 4) {
 
-            FileWriter fileWriter = new FileWriter("C:\\Users\\user\\Desktop\\stk\\goal\\src");
+            FileWriter fileWriter = new FileWriter("C:\\Users\\user\\Desktop\\stk\\goal\\src\\aa.txt");
 
             System.out.print("Enter your new student name :");
             String addst = scanner.next();
@@ -89,7 +89,7 @@ public class Main {
             System.out.println("Student Added");
 
         } else if (Option == 5) {
-            File file = new File("C:\\Users\\user\\Desktop\\stk\\goal\\src");
+            //File file = new File("C:\\Users\\user\\Desktop\\stk\\goal");
             BufferedReader bufferedReader = null;
             try {
                 bufferedReader = new BufferedReader(new FileReader(file));
@@ -125,7 +125,7 @@ public class Main {
     }
 
     public static int getNumberOfStdents() throws IOException{
-        File file = new File("C:\\Users\\user\\Desktop\\stk\\goal\\src");
+        File file = new File("C:\\Users\\user\\Desktop\\stk\\goal\\src\\aa.txt");
         BufferedReader bufferedReader = null;
 
         try{
